@@ -10,6 +10,9 @@ def test_login():
     #Run silent without browser
     # options.add_argument("--headless")
 
+    #run by default maximize
+    options.add_argument("--start-maximized")
+
     #add extension
     path1="C:/Users/aksha/OneDrive/Desktop/PythonWebAutomation/CRX/EditThisCookie.crx"
     path2 ="C:/Users/aksha/OneDrive/Desktop/PythonWebAutomation/CRX/Selenium-IDE.crx"
@@ -18,7 +21,6 @@ def test_login():
 
     driver=webdriver.Chrome(options)
     driver.get("https://katalon-demo-cura.herokuapp.com/")
-    driver.maximize_window()
     print(driver.current_url)
 
     driver.get("https://app.vwo.com/")
