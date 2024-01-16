@@ -10,6 +10,9 @@ def test_login():
     # Run silent without browser
     options.add_argument("--headless")
 
+    #by default maximize
+    # options.add_argument("--start-maximized")
+
     # add extension
     # path = "C:/Users/aksha/OneDrive/Desktop/PythonWebAutomation/EditThisCookie.crx"
     # options.add_extension(path)
